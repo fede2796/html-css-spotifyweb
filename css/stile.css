@@ -38,7 +38,7 @@ body{
 main{
    
     width: 100%;
-    height: calc(100vh);
+    height: calc(100vh-100px);
     background-color: salmon;
     display: flex;
     overflow-y: hidden;
@@ -49,7 +49,7 @@ main{
     background-color: green;
     border: 1px solid red;
     width: 20%;
-    overflow-y: scroll;
+  
 }
 .padding-menu{
     padding-left: 10px;
@@ -106,7 +106,7 @@ main{
 /*Second List*/
 .secondlist{
    margin-top: 20px;
-   padding-bottom: 100px;
+   margin-bottom: 500px;
 }
 .secondlist h2{
     color: white;
@@ -136,10 +136,10 @@ main{
 }
 .secondlist ul{
     overflow-y: scroll;
-   
+   height: 200px;
 }
 .name{
-    margin-top: 10px;
+    margin-top: 15px;
    
 }
 .name a{
