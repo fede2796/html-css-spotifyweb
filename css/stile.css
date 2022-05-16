@@ -6,3 +6,36 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
+/*TOPMAIN*/
+.topmain{
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100px;
+    top: 0;
+    right: 0;
+    position: fixed;
+    width: calc(100% - 100px);
+}
+/*MAIN*/
+main{
+    width: 100%;
+    height: calc(100vh - 100px);
+    background-color: salmon;
+    display: flex;
+}
+.menu{
+    background-color: green;
+    border: 1px solid red;
+    width: 100px;
+}
+.interface{
+    background-color: orange;
+    border: 1px solid black;
+    width: calc(100% - 100px);
+    padding-top: 130px;
+}
+/*FOOTER*/
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
