@@ -34,6 +34,13 @@ body{
     color: white;
     text-decoration: none;
 }
+.zoom2 {
+    
+    transition: 1.2s ease;
+    }
+    .zoom2:hover{
+    transform : scale(1.1);
+    }
 /*MAIN*/
 main{
     
