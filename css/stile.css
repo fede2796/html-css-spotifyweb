@@ -292,16 +292,19 @@ main{
 .card:hover .overlay{
  opacity: 0.5;
 }
+
 .overlay i{
     font-size: 100px;
     color:white;
-    opacity:1;
+    opacity: 1;
     top: 30%;
     left: 30%;
     position: absolute;
     
 }
-
+.overlay:hover i{
+    opacity: 1;
+}
 
 /*FOOTER*/
 footer{
