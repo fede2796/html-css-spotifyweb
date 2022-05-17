@@ -337,6 +337,40 @@ footer{
     background-color: black;
     
 }
+.confooter{
+    display: flex;
+    justify-content: space-between;
+}
+.colf{
+    border: 1px solid red;
+    height: 100px;
+}
+.cardf{
+    display: flex;
+}
+.cardf img{
+    height: 50px;
+    color: white;
+    margin-top: 20px;
+    padding-left: 5px;
+}
+.branof{
+    margin-top:30px;
+    margin-left: 20px;
+    margin-right: 50px;
+}
+.branof h5{
+    color: white;
+}
+.branof span{
+    color: grey;
+    font-size: 10px;
+}
+.cardf i{
+    color:grey;
+    margin-top: 35px;
+    margin-right: 20px;
+}
 /*xs*/
 @media  screen and (max-width:600px) {
     .menu{
