@@ -214,6 +214,9 @@ main{
     overflow-y:scroll;
     position: relative;
 }
+.paddinginterface{
+    padding-left: 20px;
+}
 .container-list ul{
     display: flex;
     justify-content: center;
@@ -238,6 +241,67 @@ main{
 .link:hover hr{
     display: flex;
 }
+.container-card{
+    padding-top: 20px;
+    display: flex;
+    width: 100%;
+}
+
+.col{
+    width: calc(100% / 6);
+    border: 1px red solid;
+    margin-right: 20px;
+    padding-bottom: 20px;
+    
+}
+.h2title{
+    padding-top: 30px;
+    color: white;
+}
+.immagine {
+    position: relative;
+}
+.card a img{
+    width: 100%;
+    padding-bottom: 0;
+}
+.card h3 a{
+    text-decoration: none;
+    color: white;
+    padding-left: 75px;
+}
+.card h3{
+    padding-bottom: 10px;
+}
+.card h5{
+    color: lightgrey;
+    padding-left: 100px;
+}
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background-color: grey;
+    transition: 0.3s;
+}
+.card:hover .overlay{
+ opacity: 0.5;
+}
+.overlay i{
+    font-size: 100px;
+    color:white;
+    opacity:1;
+    top: 30%;
+    left: 30%;
+    position: absolute;
+    
+}
+
 
 /*FOOTER*/
 footer{
