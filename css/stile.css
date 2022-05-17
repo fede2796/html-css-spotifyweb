@@ -207,7 +207,7 @@ main{
 
 /*Interface*/
 .interface{
-    background-color: orange;
+    background-color: black;
     border: 1px solid black;
     width: calc(90%);
     padding-top: 130px;
@@ -286,7 +286,7 @@ main{
     height: 100%;
     width: 100%;
     opacity: 0;
-    background-color: grey;
+    background-color: black;
     transition: 0.3s;
 }
 .card:hover .overlay{
@@ -302,7 +302,7 @@ main{
     position: absolute;
     
 }
-.overlay:hover i{
+.card:hover .overlay i{
     opacity: 1;
 }
 
