@@ -14,7 +14,7 @@ body{
     top: 0;
     right: 0;
     position: fixed;
-    width: calc(90%);
+    width: calc(85%);
     display: flex;
     justify-content: right;
     align-items: center;
@@ -53,7 +53,7 @@ main{
 /*Menu*/
 .menu{
     background-color: black;
-    width: 10%;
+    width: 15%;
     position: relative;
 }
 .padding-menu{
@@ -111,7 +111,7 @@ main{
 /*Second List*/
 .secondlist{
    margin-top: 20px;
-   margin-bottom: 200px;
+   margin-bottom: 100px;
 }
 .secondlist h2{
     color: white;
@@ -221,7 +221,7 @@ main{
 /*Interface*/
 .interface{
     background-color:#141922;
-    width: calc(90%);
+    width: calc(85%);
     padding-top: 130px;
     overflow-y:scroll;
     position: relative;
@@ -308,15 +308,17 @@ main{
  opacity: 0.5;
 }
 
-.overlay i{
+.immagine i{
     font-size: 100px;
     color:white;
     top: 30%;
     left: 30%;
     position: absolute;
-    
+    display: none;
 }
-
+.card:hover i{
+    display: flex;
+}
 
 .h4title{
     color:grey;
@@ -327,8 +329,8 @@ main{
     object-fit: cover;
 }
 .square2{
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    height: 100%;
     border-radius: 50% ;
     overflow: hidden;
     margin-right: 10px;
@@ -336,9 +338,9 @@ main{
 .artist .col{
     width: 300px;
 }
-.artist .overlay i{
-    top: 35%;
-    left: 35%;
+.artist i{
+    top: 33%;
+    left: 33%;
 }
 /*FOOTER*/
 footer{
@@ -351,7 +353,7 @@ footer{
     justify-content: space-between;
 }
 .colf{
-    
+    width: 25%;
     height: 100px;
 }
 .cardf{
@@ -371,19 +373,29 @@ footer{
 .branof h5{
     color: white;
 }
-.branof span{
+.branof a{
     color: grey;
     font-size: 10px;
 }
-.cardf i{
+.branof:hover a{
+    color: white;
+}
+.heart{
     color:grey;
     margin-top: 35px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
+
+.cardf:hover .heart{
+    color: white;
+}
+.simbol{
+    margin-top: 30px;
+}
+
 .colfc{
     width: 50%;
-    height: 100px;
-   
+    height: 100px; 
 }
 .iconf{
     text-align: center;
@@ -434,6 +446,8 @@ footer{
 }
 .colfl{
     display: flex;
+    width: 30%;
+    padding-left: 11%;
 }
 .colfl a{
     color: white;
@@ -476,6 +490,147 @@ footer{
     background-color: white;
 }
 
+/*md*/
+@media screen and (max-width:1100px) {
+    .container-card{
+        flex-wrap: wrap;
+    }
+    .col{
+        width: calc(100% / 5);
+    }
+    .menu{
+        width: 20%;
+    }
+    .interface{
+        width: 80%;
+    }
+    .topmain{
+        width: 80%;
+    }
+    .artist .col{
+        width: calc(100% / 5);
+    }
+    .sign{
+        width: 100%;
+    }
+    .install{
+        width: 20%;
+    }
+    .sign hr{
+        width: 28%;
+    }
+    .colf{
+        margin-right: 10px;
+    }
+    .colfl{
+        padding-left: 20px;
+    }
+    .iconf i{
+        margin-right: 10px;
+    }
+    .music{
+        width: 100%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .musictime{
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    .branof{
+        margin-right: 20px;
+    }
+    .immagine i{
+        font-size: 50px;
+    }
+    .card h3{
+        font-size: 13px;
+    }
+    .card h5{
+        font-size: 9px;
+    }
+    .container-list ul{
+        flex-wrap: wrap;
+    }
+    .link a{
+        font-size: 15px;
+    }
+    .container-list li{
+        margin-top: 10px;
+    }
+    .square2{
+        width: 100%;
+        height: 100%;
+    }
+  .secondlist{
+      margin-bottom: 400px;
+  }
+}
+/*s*/
+@media screen and (max-width:700px) {
+    .container-card{
+        flex-wrap: wrap;
+    }
+    .col{
+        width: calc(100% / 3);
+    }
+    .menu{
+        width: 30%;
+    }
+    .interface{
+        width: 70%;
+    }
+    .topmain{
+        width: 70%;
+    }
+    .container-list ul{
+        flex-wrap: wrap;
+    }
+    .link a{
+        font-size: 10px;
+    }
+    .sign hr{
+        width: 35%;
+    }
+    .colfc{
+        width: 50%;
+    }
+    .colf{
+        width: 25%;
+    }
+    .colfl{
+        width: 30%;
+    }
+    .immagine i{
+        font-size: 50px;
+    }
+    .card h3{
+        font-size: 13px;
+    }
+    .card h5{
+        font-size: 9px;
+    }
+    .artist .col{
+        width:calc(100% / 3);
+        height: 100%;
+    }
+   
+    .immagine .i{
+        font-size: 40px;
+        top: 20%;
+        left: 20%;
+    }
+    .branof{
+        margin-left: 2px;
+        margin-right: 7px;
+    }
+    .branof h5{
+        font-size: 10px;
+    }
+    .branof a{
+        font-size: 4px;
+    }
+}
 
 /*xs*/
 @media  screen and (max-width:600px) {
@@ -501,6 +656,42 @@ footer{
         width: 50%;
     }
     .secondlist {
+        display: none;
+    }
+    .sign hr{
+        display: none;
+    }
+    .install a{
+        display: none;
+    }
+    .user a{
+        display: none;
+    }
+    .install img{
+        width: 25%;
+    }
+    .colfl{
+        width: 35%;
+    }
+    .branof{
+        margin-left: 2px;
+        margin-right: 7px;
+    }
+    .branof h5{
+        font-size: 10px;
+    }
+    .branof a{
+        font-size: 5px;
+    }
+    .symbol a{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    
+   
+}
+@media screen and (max-height:700px) {
+    .sign{
         display: none;
     }
 }
